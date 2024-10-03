@@ -1,5 +1,4 @@
-﻿using Castle.Core.Internal;
-using CodingChallenge.Data.Helpers;
+﻿using CodingChallenge.Data.Helpers;
 using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
@@ -30,7 +29,7 @@ namespace CodingChallenge.Data.Classes
             var shapeTypes = ReflectiveEnumerator.GetEnumerableOfTypeByOrderAttribute<Shape>();
             foreach (var type in shapeTypes)
             {
-                var subList = shapes.Where(x => x.GetType() == type);
+                var subList = shapes.Where(x => x.GetType() == type).ToList();
                 var subListTotal = subList.Count();
 
                 if (subList.Any())
