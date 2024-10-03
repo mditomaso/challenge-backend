@@ -75,6 +75,7 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <EmbeddedResource Include="Resources\Shape.de.resx" />
     <EmbeddedResource Include="Resources\Shape.es.resx" />
     <EmbeddedResource Include="Resources\Shape.resx">
       <Generator>ResXFileCodeGenerator</Generator>
