@@ -52,7 +52,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Classes\FormaGeometrica.cs" />
+    <Compile Include="Classes\Circle.cs" />
+    <Compile Include="Classes\IsoscelesTrapezoid.cs" />
+    <Compile Include="Classes\Report.cs" />
+    <Compile Include="Helpers\EnumHelper.cs" />
+    <Compile Include="Helpers\LanguageEnum.cs" />
+    <Compile Include="Classes\Shape.cs" />
+    <Compile Include="Classes\Square.cs" />
+    <Compile Include="Classes\EquilateralTriangle.cs" />
+    <Compile Include="Helpers\OrderAttribute.cs" />
+    <Compile Include="Helpers\ReflectiveEnumerator.cs" />
+    <Compile Include="Interfaces\IShape.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Resources\Shape.Designer.cs">
       <AutoGen>True</AutoGen>
