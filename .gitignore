@@ -187,3 +187,6 @@ fabric.properties
 
 # *.iml
 # modules.xml
+/.vs/CodingChallenge
+/CodingChallenge.Data/.vs/CodingChallenge.Data.csproj.dtbcache.json
+/CodingChallenge.Data.Tests/.vs/CodingChallenge.Data.Tests.csproj.dtbcache.json
