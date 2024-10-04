@@ -31,3 +31,10 @@ Lo que te encontrás al levantar la .sln es una librería con el objeto de negoc
 La resolución es libre y cómo encarar el problema queda en el criterio de quien lo resuelva!
 
 **¡¡Éxitos padawan!!**
+
+### Comentarios
+
+El challenge está resuelto en la rama **main**.
+
+El archivo **api.yaml** contiene la documentación de los métodos solicitados y se puede visualizar/testear importándolo o copiándolo en el [editor de swagger](https://editor.swagger.io/).
+
