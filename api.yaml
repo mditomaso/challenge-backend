@@ -1,0 +1,134 @@
+openapi: 3.0.3
+info:
+  title: Wayni Challenge - OpenAPI 3.0
+  description:
+    This is a sample based on the OpenAPI 3.0 specification.
+  
+  version: 1.0.11
+servers:
+  - url: https://petstore3.swagger.io/api/v3
+paths:
+  /shape/getArea:
+    get:
+      tags:
+        - shape
+      summary: Gets the area of the specified shape
+      parameters:
+        - name: type
+          in: query
+          description: Type of the shape that will be calculated
+          required: true
+          explode: true
+          schema:
+            type: string
+            default: square
+            enum:
+              - square
+              - circle
+              - triangle
+              - trapezoid
+        - name: side
+          in: query
+          description: Size of the side.
+          required: true
+          explode: true
+          schema:
+            type: number
+            default: 8
+        - name: majorBase
+          in: query
+          description: Size of the major side. Only needed for trapezoids.
+          required: false
+          explode: true
+          schema:
+            type: number
+            default: 8
+        - name: smallerBase
+          in: query
+          description: Size of the side. Only needed for trapezoids.
+          required: false
+          explode: true
+          schema:
+            type: number
+            default: 8
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                type: number
+            application/xml:
+              schema:
+                type: number
+        '400':
+          description: Invalid parameters
+  /shape/getPerimeter:
+    get:
+      tags:
+        - shape
+      summary: Gets the perimeter of the specified shape
+      parameters:
+        - name: type
+          in: query
+          description: Type of the shape that will be calculated
+          required: true
+          explode: true
+          schema:
+            type: string
+            default: square
+            enum:
+              - square
+              - circle
+              - triangle
+              - trapezoid
+        - name: side
+          in: query
+          description: Size of the side.
+          required: true
+          explode: true
+          schema:
+            type: number
+            default: 8
+        - name: majorBase
+          in: query
+          description: Size of the major side. Only needed for trapezoids.
+          required: false
+          explode: true
+          schema:
+            type: number
+            default: 8
+        - name: smallerBase
+          in: query
+          description: Size of the side. Only needed for trapezoids.
+          required: false
+          explode: true
+          schema:
+            type: number
+            default: 8
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                type: number
+            application/xml:
+              schema:
+                type: number
+        '400':
+          description: Invalid parameters
+components:
+  schemas:
+    ApiResponse:
+      type: object
+      properties:
+        code:
+          type: integer
+          format: int32
+        type:
+          type: string
+        message:
+          type: string
+      xml:
+        name: '##default'
